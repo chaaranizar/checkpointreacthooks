@@ -1,9 +1,12 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import ReactStars from 'react-stars'
-
+import './moviscard.css'
 const Moviescard = ({movie}) => {
+  
   return (
+    
     <div>
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src= {movie.posterUrl} />
@@ -12,7 +15,7 @@ const Moviescard = ({movie}) => {
         <Card.Text>
           {movie.description}
         </Card.Text>
-      </Card.Body>
+      
       <ReactStars
   count={5}
  value = {movie.rate}
@@ -20,6 +23,11 @@ const Moviescard = ({movie}) => {
   color2={'#ffd700'}
   edit = {false} 
   />
+  <div className='button'>
+    <button className='b1'><a  href={movie.trailer} target= {"blanck"}>Trailer</a></button>
+    <Link to={`/description/${movie.id}`}><button className='b2'>Description</button></Link>
+  </div>
+  </Card.Body>
     </Card>
     </div>
   )

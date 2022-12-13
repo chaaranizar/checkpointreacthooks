@@ -4,6 +4,7 @@ import Addmovie from './Components/Addmovie';
 import {moviesData} from './Components/Data'
 import Filtermovie from './Components/Filtermovie';
 import Movielist from './Components/Movielist';
+
 function App() {
   const [movies, setMovies] = useState (moviesData)
   const add = (newMovies) => {
@@ -16,6 +17,7 @@ function App() {
       <Filtermovie inputSearch = {inputSearch} setInputSearch = {setInputSearch} inputRate = {inputRate} setInputRate ={setInputRate}/>
     <Movielist movies = {movies} inputSearch = {inputSearch} inputRate ={inputRate}/>
     <Addmovie add = {add}/>
+   
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.b1 {
+    
+ background-color: blue;
+}
+.b1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.b2 {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}

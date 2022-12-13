@@ -1,0 +1,16 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact h1 {
+    margin-bottom: 20px;
+}
+.FN {
+    width: 500px;
+}
+.message {
+    height: 200px;
+}
